@@ -1,8 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* CSS HEX */
+
   --yellow: #fef200;
   --black: #231f20;
   --light-blue: #0aabea;
@@ -10,9 +13,10 @@
   --gray: #a8a9ad;
   --green: #014b38;
   --white: #ffffff;
+  --orange: #ffce8f;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 16px; /* Puedes ajustar el tamaño de fuente según tus necesidades */
-  line-height: 1.5; /* Para una mejor legibilidad */
+  font-size: 16px;
+  line-height: 1.5;
 }
