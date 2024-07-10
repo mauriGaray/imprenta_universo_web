@@ -9,6 +9,7 @@ const navigation = [
   { name: "INICIO", href: "#", current: false },
   { name: "SERVICIOS", href: "#", current: false },
   { name: "PORTFOLIO", href: "#", current: false },
+  { name: "SOLICITE COTIZACIÓN", href: "#", current: false },
 ];
 
 function classNames(...classes) {
@@ -20,10 +21,10 @@ export default function Navbar() {
     <>
       <Disclosure as="nav">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 nav__container">
-          <div className="relative flex h-16 items-center justify-between">
-            <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <div className="relative flex h-24 items-center ">
+            <div className="absolute inset-y-0 right-0 flex items-center md:hidden">
               {/* Mobile menu button*/}
-              <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-custom-black hover:bg-gray-700 hover:text-custom-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-800">
+              <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-custom-black hover:bg-white hover:text-custom-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-800">
                 <span className="absolute -inset-0.5" />
                 <span className="sr-only">Open main menu</span>
                 <Bars3Icon
@@ -44,7 +45,7 @@ export default function Navbar() {
                   className="h-12 w-auto"
                 />
               </div>
-              <div className="hidden sm:ml-6 sm:block">
+              <div className="hidden md:flex md:ml-auto md:items-center">
                 <div className="flex space-x-4">
                   {navigation.map((item) => (
                     <a
@@ -67,7 +68,7 @@ export default function Navbar() {
         </div>
 
         <DisclosurePanel className="sm:hidden">
-          <div className="space-y-1 px-2 pb-3 pt-2">
+          <div className="space-y-1 px-2 pb-3 pt-2 ">
             {navigation.map((item) => (
               <DisclosureButton
                 key={item.name}
@@ -77,8 +78,8 @@ export default function Navbar() {
                 className={classNames(
                   item.current
                     ? "bg-gray-900 text-white"
-                    : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                  "block rounded-md px-3 py-2 text-base font-medium "
+                    : "text-black hover:bg-gray-700 hover:text-white",
+                  "block rounded-md px-3 py-2 text-base font-medium navbar__disclosure--item"
                 )}>
                 {item.name}
               </DisclosureButton>

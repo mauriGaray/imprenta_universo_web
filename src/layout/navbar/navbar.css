@@ -2,3 +2,10 @@
   border-bottom: 3px solid transparent;
   border-image: url("/img/section-who-bottom-border.jpg") 1 round;
 }
+.navbar__disclosure--item {
+  border-bottom: 3px solid rgb(48, 48, 48);
+}
+.navbar__div--panel {
+  transition: 1s ease-in-out;
+  overflow: hidden;
+}
