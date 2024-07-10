@@ -1,9 +1,10 @@
 import "./App.css";
+import Navbar from "./layout/navbar/Navbar";
 
 function App() {
   return (
     <>
-      <p>hola</p>
+      <Navbar />
     </>
   );
 }
