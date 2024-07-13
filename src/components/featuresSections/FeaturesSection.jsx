@@ -1,33 +1,40 @@
 import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
+  BookOpenIcon,
+  BuildingOfficeIcon,
+  PaintBrushIcon,
+  RocketLaunchIcon,
 } from "@heroicons/react/20/solid";
 
 const features = [
   {
-    name: "Push to deploy.",
+    name: "Publicitarias",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-    icon: CloudArrowUpIcon,
+      "Nos especializamos en impresiones publicitarias que captan la atención y transmiten tu mensaje de manera efectiva. Desde afiches y volantes hasta banners y carteles",
+    icon: PaintBrushIcon,
   },
   {
-    name: "SSL certificates.",
+    name: "Corporativas",
     description:
-      "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
-    icon: LockClosedIcon,
+      "Proveemos servicios de impresión corporativa de excelencia, ideales para material promocional, tarjetas de presentación, y documentos empresariales.",
+    icon: BuildingOfficeIcon,
   },
   {
-    name: "Database backups.",
+    name: "Editoriales",
     description:
-      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-    icon: ServerIcon,
+      "Ofrecemos servicios de impresión editorial de alta calidad, perfectos para libros, revistas y otros materiales impresos.",
+    icon: BookOpenIcon,
+  },
+  {
+    name: "y mucho más...",
+    description:
+      "Calendarios, catálogos, folletos, volantes, adhesivos, carpetas, impresión en microperforado, talonarios de factura.",
+    icon: RocketLaunchIcon,
   },
 ];
 
 export default function FeaturesSection() {
   return (
-    <div className="overflow-hidden bg-white py-24 sm:py-32">
+    <div className="overflow-hidden bg-white py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           {/*Grid*/}
@@ -41,9 +48,11 @@ export default function FeaturesSection() {
                 Impresiones de alta calidad
               </p>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                En Imprenta Universo, nos dedicamos a ofrecer soluciones de
-                impresión personalizadas y de alta calidad. Desde tarjetas de
-                presentación hasta catálogos completos.
+                Ofrecemos una amplia gama de servicios de impresión para cubrir
+                todas tus necesidades. Contamos con experiencia en impresión en
+                general y podemos brindarte resultados de alta calidad. Confía
+                en nosotros para obtener un servicio profesional y confiable en
+                todas tus necesidades de impresión.
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                 {features.map((feature) => (
@@ -64,10 +73,10 @@ export default function FeaturesSection() {
           {/*Segunda columna*/}
           <img
             alt="Product screenshot"
-            src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+            src="../../../public/img/impresion.PNG"
             width={2432}
             height={1442}
-            className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+            className="w-[20rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[50rem] md:-ml-4 lg:-ml-0"
           />
         </div>
       </div>
