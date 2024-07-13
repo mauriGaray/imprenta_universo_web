@@ -3,7 +3,7 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import "./navbar.css";
 const navigation = [
   { name: "INICIO", href: "#", current: false },
@@ -45,7 +45,7 @@ export default function Navbar() {
                   className="h-12 w-auto"
                 />
               </div>
-              <div className="hidden md:flex md:ml-auto md:items-center">
+              <div className="hidden md:flex md:ml-auto md:items-center ">
                 <div className="flex space-x-4">
                   {navigation.map((item) => (
                     <a
@@ -56,7 +56,7 @@ export default function Navbar() {
                         item.current
                           ? "bg-gray-900 text-white"
                           : "text-black hover:bg-gray-900 hover:text-white",
-                        "rounded-md mt-2 px-3 py-2 text-sm font-medium"
+                        "rounded-md mt-2 px-3 py-2 text-sm font-medium  "
                       )}>
                       {item.name}
                     </a>
@@ -79,7 +79,7 @@ export default function Navbar() {
                   item.current
                     ? "bg-gray-900 text-white"
                     : "text-black hover:bg-gray-700 hover:text-white",
-                  "block rounded-md px-3 py-2 text-base font-medium navbar__disclosure--item"
+                  "block rounded-md px-3 py-2 text-base font-medium navbar__disclosure--item--panel"
                 )}>
                 {item.name}
               </DisclosureButton>

@@ -2,7 +2,8 @@
   border-bottom: 3px solid transparent;
   border-image: url("/img/section-who-bottom-border.jpg") 1 round;
 }
-.navbar__disclosure--item {
+.navbar__disclosure--item--panel {
+  background-color: rgb(171, 169, 169);
   border-bottom: 3px solid rgb(48, 48, 48);
 }
 .navbar__div--panel {
