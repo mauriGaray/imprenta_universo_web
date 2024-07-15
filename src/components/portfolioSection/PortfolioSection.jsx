@@ -15,12 +15,13 @@ const PortfolioSection = () => {
           VER PORTFOLIO
         </Button>
       </div>
-
-      <img
-        className="portfolio__img"
-        src="../../../public/img/FOTO 11.jpg"
-        alt="portfolio img"
-      />
+      <div className="portfolioSection__div--img">
+        <img
+          className="portfolio__img"
+          src="/img/FOTO 11.jpg"
+          alt="portfolio img"
+        />
+      </div>
     </section>
   );
 };
