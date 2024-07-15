@@ -18,7 +18,7 @@ const PortfolioSection = () => {
 
       <img
         className="portfolio__img"
-        src="/img/impresion151515.PNG"
+        src="../../../public/img/FOTO 11.jpg"
         alt="portfolio img"
       />
     </section>

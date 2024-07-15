@@ -24,7 +24,7 @@ export default function Navbar() {
           <div className="relative flex h-24 items-center ">
             <div className="absolute inset-y-0 right-0 flex items-center md:hidden">
               {/* Mobile menu button*/}
-              <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-custom-black hover:bg-white hover:text-custom-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-800">
+              <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-custom-black hover:bg-white hover:text-custom-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-800 ">
                 <span className="absolute -inset-0.5" />
                 <span className="sr-only">Open main menu</span>
                 <Bars3Icon
@@ -38,11 +38,11 @@ export default function Navbar() {
               </DisclosureButton>
             </div>
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-              <div className="flex flex-shrink-1 items-center">
+              <div className="flex flex-shrink-1 items-center ">
                 <img
                   alt="Imprenta Universo"
                   src="/img/logo universo svg.svg"
-                  className="h-12 w-auto"
+                  className="h-12 w-auto lg: h-8 w-auto pr-5"
                 />
               </div>
               <div className="hidden md:flex md:ml-auto md:items-center ">
