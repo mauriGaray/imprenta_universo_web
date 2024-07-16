@@ -19,7 +19,7 @@ export default function ContactSection() {
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8 isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
         <img
           alt=""
-          src="../../../public/img/portfolio8.png"
+          src="/img/portfolio8.png"
           className="absolute inset-0 -z-10 h-full w-full object-cover object-center"
         />
         <div
