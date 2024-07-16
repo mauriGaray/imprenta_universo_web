@@ -43,7 +43,7 @@ export default function Navbar() {
                 <img
                   alt="Imprenta Universo"
                   src="/img/logo universo svg.svg"
-                  className="h-12 w-auto lg:h-8 w-auto pr-5"
+                  className="h-12 w-auto lg:h-8 w-auto pr-5 lg:h-14 "
                 />
               </div>
               <div className="hidden md:flex md:ml-auto md:items-center">

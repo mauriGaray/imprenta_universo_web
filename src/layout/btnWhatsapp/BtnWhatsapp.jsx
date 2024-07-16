@@ -2,7 +2,7 @@ import "./btnWhatsapp.css";
 
 const BtnWhatsapp = () => {
   return (
-    <div className="">
+    <div>
       <a href="https://wa.me/595981482599?text=Hola!%20Me%20gustar%C3%ADa%20pedir%20una%20cotizaci%C3%B3n.">
         <img
           src="/img/btn-whatsapp.png"
