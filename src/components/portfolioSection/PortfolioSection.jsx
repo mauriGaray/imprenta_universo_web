@@ -1,29 +1,67 @@
 import { Button } from "@headlessui/react";
-import "./portfolio.css";
-const PortfolioSection = () => {
-  return (
-    <section className=" bg-custom-pink  portfolioSection__section--container">
-      <div className="portfolioSection__div--containerH2P">
-        <h2 className="text-2xl mt-5 font-bold leading-7 text-white ">
-          CONOZCA NUESTROS TRABAJOS!
-        </h2>
-        <p className="mt-5 mb-5 text-base leading-7 text-white">
-          Descubra la calidad y variedad de nuestros proyectos de impresión,
-          diseñados para satisfacer las necesidades más exigentes.
-        </p>
-        <Button className="rounded bg-white py-2 px-4  text-sm font-bold text-custom-pink data-[hover]:bg-white data-[active]:bg-gray-300">
-          VER PORTFOLIO
-        </Button>
-      </div>
-      <div className="portfolioSection__div--img">
-        <img
-          className="portfolio__img"
-          src="/img/FOTO 11.jpg"
-          alt="portfolio img"
-        />
-      </div>
-    </section>
-  );
-};
+const callouts = [
+  {
+    name: "Tarjetas publicitarias",
+    description:
+      "Tarjetas impresas de alta calidad para promociones y marketing.",
+    imageSrc: "/img/FOTO 14.jpg",
+    imageAlt: "Tarjeta publicitarias",
+    href: "#",
+  },
+  {
+    name: "Pasacalles",
+    description:
+      "Impresión de pasacalles resistentes y duraderos para eventos y publicidad.",
+    imageSrc: "/img/FOTO 11.jpg",
+    imageAlt: "Pasacalles",
+    href: "#",
+  },
+  {
+    name: "Publicidad corporativa",
+    description:
+      "Soluciones de impresión para mejorar la imagen corporativa de tu empresa.",
+    imageSrc: "/img/fotos 1.jpg",
+    imageAlt: "Publicidad corporativa",
+    href: "#",
+  },
+];
 
-export default PortfolioSection;
+export default function PortfolioSection() {
+  return (
+    <div className="bg-gray-100 mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-16">
+          <h2 className="text-2xl font-bold text-gray-900">
+            CONOZCA NUESTROS TRABAJOS!
+          </h2>
+
+          <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+            {callouts.map((callout) => (
+              <div key={callout.name} className="group relative">
+                <div className="relative h-auto w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75  sm:h-64">
+                  <img
+                    alt={callout.imageAlt}
+                    src={callout.imageSrc}
+                    className="h-full w-full object-cover object-center"
+                  />
+                </div>
+                <h3 className="mt-6 text-sm text-gray-500">
+                  <a href={callout.href}>
+                    <span className="absolute inset-0" />
+                    {callout.name}
+                  </a>
+                </h3>
+                <p className="text-base font-semibold text-gray-900">
+                  {callout.description}
+                </p>
+              </div>
+            ))}
+          </div>
+          <Button className=" flex justify-center mx-auto mt-8 p-4 rounded bg-custom-pink py-2 px-4  text-sm font-bold text-white data-[hover]:bg-pink-950 data-[active]:bg-pink-800">
+            VER PORTFOLIO
+          </Button>
+        </div>
+      </div>
+    </div>
+  );
+}

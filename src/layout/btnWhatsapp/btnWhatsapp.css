@@ -1,0 +1,8 @@
+.btnWhatsapp__img {
+  height: 6rem;
+}
+@media (min-width: 640px) {
+  .btnWhatsapp__img {
+    height: auto;
+  }
+}

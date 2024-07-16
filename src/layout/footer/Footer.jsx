@@ -138,7 +138,7 @@ const Footer = () => {
               <p className="font-medium">Contacto</p>
               <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
                 <a className="hover:opacity-75" href>
-                  tél.: +595 981 482599
+                  tel.: +595 981 482599
                 </a>
                 <a className="hover:opacity-75" href>
                   email: imp.universo@gmail.com
@@ -158,7 +158,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <p className="mt-8 text-xs text-gray-800">© 2024 Imprenta Universo</p>
+        <p className="mt-8 text-xs text-gray-800 flex justify-center">
+          2024 © Imprenta Universo - created by dev Garay Carlos
+        </p>
       </div>
     </footer>
   );

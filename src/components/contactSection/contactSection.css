@@ -1,0 +1,24 @@
+.contactSection__section--container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.contactSection__div--containerH2P {
+  margin: 2rem 5rem;
+}
+.contactSection__div--img {
+  max-width: 100%;
+  height: auto;
+}
+.contact__img {
+  max-width: 100%;
+  height: auto;
+}
+.contactSection__div--img {
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .contactSection__section--container {
+    flex-wrap: nowrap;
+  }
+}
