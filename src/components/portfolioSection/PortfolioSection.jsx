@@ -1,4 +1,5 @@
 import { Button } from "@headlessui/react";
+import { Link } from "react-router-dom";
 const callouts = [
   {
     name: "Tarjetas publicitarias",
@@ -57,9 +58,11 @@ export default function PortfolioSection() {
               </div>
             ))}
           </div>
-          <Button className=" flex justify-center mx-auto mt-8 p-4 rounded bg-custom-pink py-2 px-4  text-sm font-bold text-white data-[hover]:bg-pink-950 data-[active]:bg-pink-800">
-            VER PORTFOLIO
-          </Button>
+          <Link to={"/portfolio"}>
+            <Button className=" flex justify-center mx-auto mt-8 p-4 rounded bg-custom-pink py-2 px-4  text-sm font-bold text-white data-[hover]:bg-pink-950 data-[active]:bg-pink-800">
+              VER PORTFOLIO
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

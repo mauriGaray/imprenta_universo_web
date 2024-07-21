@@ -77,10 +77,10 @@ const Footer = () => {
                         r="1"
                         gradientTransform="matrix(0 -253.715 235.975 0 68 275.717)"
                         gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#fd5" />
-                        <stop offset=".1" stop-color="#fd5" />
-                        <stop offset=".5" stop-color="#ff543e" />
-                        <stop offset="1" stop-color="#c837ab" />
+                        <stop stopColor="#fd5" />
+                        <stop offset=".1" stopColor="#fd5" />
+                        <stop offset=".5" stopColor="#ff543e" />
+                        <stop offset="1" stopColor="#c837ab" />
                       </radialGradient>
                       <radialGradient
                         id="skillIconsInstagram1"
@@ -89,9 +89,9 @@ const Footer = () => {
                         r="1"
                         gradientTransform="matrix(22.25952 111.2061 -458.39518 91.75449 -42.881 18.441)"
                         gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#3771c8" />
-                        <stop offset=".128" stop-color="#3771c8" />
-                        <stop offset="1" stop-color="#60f" stop-opacity="0" />
+                        <stop stopColor="#3771c8" />
+                        <stop offset=".128" stopColor="#3771c8" />
+                        <stop offset="1" stopColor="#60f" stopOpacity="0" />
                       </radialGradient>
                     </defs>
                   </g>
@@ -125,33 +125,28 @@ const Footer = () => {
             <div>
               <p className="font-medium">Horario</p>
               <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                <a className="hover:opacity-75" href>
+                <div className="hover:opacity-75">
                   Lun. a Vie. 07:30 a 12:00 13:30 a 18:00
-                </a>
-                <a className="hover:opacity-75" href>
-                  {" "}
-                  Sáb. 08:00 a 12:00
-                </a>
+                </div>
+                <div className="hover:opacity-75"> Sáb. 08:00 a 12:00</div>
               </nav>
             </div>
             <div>
               <p className="font-medium">Contacto</p>
               <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                <a className="hover:opacity-75" href>
-                  tel.: +595 981 482599
-                </a>
-                <a className="hover:opacity-75" href>
+                <div className="hover:opacity-75">tel.: +595 981 482599</div>
+                <div className="hover:opacity-75">
                   email: imp.universo@gmail.com
-                </a>
+                </div>
               </nav>
             </div>
             <div>
               <p className="font-medium">Ubicación</p>
               <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                <a className="hover:opacity-75" href>
+                <div className="hover:opacity-75">
                   {" "}
                   Honorio González c/ Padre Kreusser,
-                </a>
+                </div>
                 <a className="hover:opacity-75"> Encarnación,</a>
                 <a className="hover:opacity-75"> Paraguay</a>
               </nav>

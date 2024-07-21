@@ -1,4 +1,6 @@
 import React from "react";
+import { Button } from "@headlessui/react";
+import { Link } from "react-router-dom";
 
 const stats = [
   { name: "+595 981 482599", value: "Teléfono" },
@@ -73,6 +75,11 @@ export default function ContactSection() {
                 </div>
               ))}
             </dl>
+            <Link to={"/portfolio"}>
+              <Button className=" flex justify-center mx-auto mt-8 p-4 rounded bg-custom-pink py-2 px-4  text-sm font-bold text-white data-[hover]:bg-pink-950 data-[active]:bg-pink-800">
+                SOLICITAR COTIZACIÓN
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
