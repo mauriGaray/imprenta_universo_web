@@ -7,7 +7,6 @@ const callouts = [
       "Tarjetas impresas de alta calidad para promociones y marketing.",
     imageSrc: "/img/FOTO 14.jpg",
     imageAlt: "Tarjeta publicitarias",
-    href: "#",
   },
   {
     name: "Pasacalles",
@@ -15,7 +14,6 @@ const callouts = [
       "Impresión de pasacalles resistentes y duraderos para eventos y publicidad.",
     imageSrc: "/img/FOTO 11.jpg",
     imageAlt: "Pasacalles",
-    href: "#",
   },
   {
     name: "Publicidad corporativa",
@@ -23,7 +21,6 @@ const callouts = [
       "Soluciones de impresión para mejorar la imagen corporativa de tu empresa.",
     imageSrc: "/img/fotos 1.jpg",
     imageAlt: "Publicidad corporativa",
-    href: "#",
   },
 ];
 
@@ -47,10 +44,8 @@ export default function PortfolioSection() {
                   />
                 </div>
                 <h3 className="mt-6 text-sm text-gray-500">
-                  <a href={callout.href}>
-                    <span className="absolute inset-0" />
-                    {callout.name}
-                  </a>
+                  <span className="absolute inset-0" />
+                  {callout.name}
                 </h3>
                 <p className="text-base font-semibold text-gray-900">
                   {callout.description}
