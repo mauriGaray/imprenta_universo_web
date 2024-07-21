@@ -1,4 +1,4 @@
-import React from "react";
+import BannerFooter from "../../components/BannerFooter";
 
 const Footer = () => {
   return (
@@ -158,10 +158,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <p className="mt-8 text-xs text-gray-800 flex justify-center">
-          2024 © Imprenta Universo - created by dev Garay Carlos
-        </p>
       </div>
+      <BannerFooter />
     </footer>
   );
 };

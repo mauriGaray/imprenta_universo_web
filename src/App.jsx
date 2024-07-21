@@ -10,6 +10,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index path="/" element={<LandingPage />} />
+            <Route index path="/ubicacion" element={<LandingPage />} />
+            <Route index path="/portfolio" element={<LandingPage />} />
+            <Route index path="/contacto" element={<LandingPage />} />
           </Route>
         </Routes>
       </Router>
