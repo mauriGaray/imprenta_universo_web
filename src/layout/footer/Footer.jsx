@@ -1,5 +1,5 @@
 import BannerFooter from "../../components/BannerFooter";
-
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-white">
@@ -17,7 +17,7 @@ const Footer = () => {
             <div className="flex lg: ml-24 mr-auto mt-8 space-x-6 text-black">
               <a
                 className="hover:opacity-75"
-                href=""
+                href="https://www.facebook.com/p/Imprenta-Universo-100063008450901/"
                 target="_blank"
                 rel="noreferrer">
                 <span className="sr-only"> Facebook </span>
@@ -43,7 +43,7 @@ const Footer = () => {
               </a>
               <a
                 className="hover:opacity-75"
-                href
+                href="https://www.instagram.com/imprentauniverso/"
                 target="_blank"
                 rel="noreferrer">
                 <span className="sr-only"> Instagram </span>
@@ -103,22 +103,22 @@ const Footer = () => {
             <div>
               <p className="font-medium">Compañía</p>
               <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                <a className="hover:opacity-75" href>
+                <div role="section" className="hover:opacity-75">
                   {" "}
-                  INICIO{" "}
-                </a>
-                <a className="hover:opacity-75" href>
+                  <Link to={"/"}>INICIO</Link>{" "}
+                </div>
+                <div role="section" className="hover:opacity-75">
                   {" "}
-                  PORTFOLIO{" "}
-                </a>
-                <a className="hover:opacity-75" href>
+                  <Link to={"/portfolio"}>PORTFOLIO</Link>{" "}
+                </div>
+                <div role="section" className="hover:opacity-75">
                   {" "}
-                  UBICACIÓN{" "}
-                </a>
-                <a className="hover:opacity-75" href>
+                  <Link to={"/ubicacion"}>UBICACIÓN</Link>{" "}
+                </div>
+                <div role="section" className="hover:opacity-75">
                   {" "}
-                  SOLICITAR COTIZACIÓN{" "}
-                </a>
+                  <Link to={"/contacto"}>SOLICITAR COTIZACIÓN</Link>{" "}
+                </div>
               </nav>
             </div>
 
