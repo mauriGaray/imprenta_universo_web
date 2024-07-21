@@ -5,12 +5,13 @@ import {
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import "./navbar.css";
+import { Link } from "react-router-dom";
 
 const navigation = [
-  { name: "INICIO", href: "#", current: false },
-  { name: "UBICACIÓN", href: "#", current: false },
-  { name: "PORTFOLIO", href: "#", current: false },
-  { name: "SOLICITE COTIZACIÓN", href: "#", current: false },
+  { name: "INICIO", href: "/", current: false },
+  { name: "UBICACIÓN", href: "/ubicacion", current: false },
+  { name: "PORTFOLIO", href: "/portfolio", current: false },
+  { name: "SOLICITE COTIZACIÓN", href: "/contacto", current: false },
 ];
 
 function classNames(...classes) {
@@ -40,18 +41,20 @@ export default function Navbar() {
             </div>
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
               <div className="flex flex-shrink-1 items-center">
-                <img
-                  alt="Imprenta Universo"
-                  src="/img/logo universo svg.svg"
-                  className="h-12 w-auto lg:h-8 w-auto pr-5 lg:h-14 "
-                />
+                <Link to={"/"}>
+                  <img
+                    alt="Imprenta Universo"
+                    src="/img/logo universo svg.svg"
+                    className="h-12 w-auto lg:h-8 w-auto pr-5 lg:h-14 "
+                  />
+                </Link>
               </div>
               <div className="hidden md:flex md:ml-auto md:items-center">
                 <div className="flex space-x-4">
                   {navigation.map((item) => (
-                    <a
+                    <Link
+                      to={item.href}
                       key={item.name}
-                      href={item.href}
                       aria-current={item.current ? "page" : undefined}
                       className={classNames(
                         item.current
@@ -60,7 +63,7 @@ export default function Navbar() {
                         "rounded-md mt-2 px-3 py-2 text-sm font-medium"
                       )}>
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>
