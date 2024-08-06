@@ -6,7 +6,7 @@ const products = [
 
     href: "#",
 
-    imageSrc: "../../../public/img/FOTO 10.jpg",
+    imageSrc: "img/FOTO 10.jpg",
     imageAlt:
       "Tall slender porcelain bottle with natural clay textured body and cork stopper.",
   },
@@ -15,7 +15,7 @@ const products = [
 
     href: "#",
 
-    imageSrc: "../../../public/img/FOTO 11.jpg",
+    imageSrc: "img/FOTO 11.jpg",
     imageAlt:
       "Olive drab green insulated bottle with flared screw lid and flat top.",
   },
@@ -24,7 +24,7 @@ const products = [
 
     href: "#",
 
-    imageSrc: "../../../public/img/FOTO 12.jpg",
+    imageSrc: "img/FOTO 12.jpg",
     imageAlt:
       "Person using a pen to cross a task off a productivity paper card.",
   },
@@ -33,7 +33,7 @@ const products = [
 
     href: "#",
 
-    imageSrc: "../../../public/img/FOTO 13.jpg",
+    imageSrc: "img/FOTO 13.jpg",
     imageAlt:
       "Hand holding black machined steel mechanical pencil with brass tip and top.",
   },
@@ -42,35 +42,35 @@ const products = [
 
     href: "#",
 
-    imageSrc: "../../../public/img/FOTO 14.jpg",
+    imageSrc: "img/FOTO 14.jpg",
     imageAlt:
       "Tall slender porcelain bottle with natural clay textured body and cork stopper.",
   },
   {
     id: 6,
     href: "#",
-    imageSrc: "../../../public/img/foto 3.jpg",
+    imageSrc: "img/foto 3.jpg",
     imageAlt:
       "Olive drab green insulated bottle with flared screw lid and flat top.",
   },
   {
     id: 7,
     href: "#",
-    imageSrc: "../../../public/img/FOTO 15.jpg",
+    imageSrc: "img/FOTO 15.jpg",
     imageAlt:
       "Olive drab green insulated bottle with flared screw lid and flat top.",
   },
   {
     id: 8,
     href: "#",
-    imageSrc: "../../../public/img/FOTO 4.jpg",
+    imageSrc: "img/FOTO 4.jpg",
     imageAlt:
       "Olive drab green insulated bottle with flared screw lid and flat top.",
   },
   {
     id: 9,
     href: "#",
-    imageSrc: "../../../public/img/foto 2.jpg",
+    imageSrc: "img/foto 2.jpg",
     imageAlt:
       "Olive drab green insulated bottle with flared screw lid and flat top.",
   },
@@ -80,7 +80,7 @@ const products = [
 
     href: "#",
 
-    imageSrc: "../../../public/img/FOTO 17.jpg",
+    imageSrc: "img/FOTO 17.jpg",
     imageAlt:
       "Hand holding black machined steel mechanical pencil with brass tip and top.",
   },
@@ -89,7 +89,7 @@ const products = [
 
     href: "#",
 
-    imageSrc: "../../../public/img/FOTO 18.jpg",
+    imageSrc: "img/FOTO 18.jpg",
     imageAlt:
       "Hand holding black machined steel mechanical pencil with brass tip and top.",
   },
@@ -98,7 +98,7 @@ const products = [
 
     href: "#",
 
-    imageSrc: "../../../public/img/FOTO 5.jpg",
+    imageSrc: "img/FOTO 5.jpg",
     imageAlt:
       "Hand holding black machined steel mechanical pencil with brass tip and top.",
   },
@@ -107,7 +107,7 @@ const products = [
 
     href: "#",
 
-    imageSrc: "../../../public/img/FOTO 7.jpg",
+    imageSrc: "img/FOTO 7.jpg",
     imageAlt:
       "Hand holding black machined steel mechanical pencil with brass tip and top.",
   },
@@ -116,7 +116,7 @@ const products = [
 
     href: "#",
 
-    imageSrc: "../../../public/img/FOTO 8.jpg",
+    imageSrc: "img/FOTO 8.jpg",
     imageAlt:
       "Hand holding black machined steel mechanical pencil with brass tip and top.",
   },
@@ -125,7 +125,7 @@ const products = [
 
     href: "#",
 
-    imageSrc: "../../../public/img/FOTO 9.jpg",
+    imageSrc: "img/FOTO 9.jpg",
     imageAlt:
       "Hand holding black machined steel mechanical pencil with brass tip and top.",
   },
@@ -134,7 +134,7 @@ const products = [
 
     href: "#",
 
-    imageSrc: "../../../public/img/fotos 1.jpg",
+    imageSrc: "img/fotos 1.jpg",
     imageAlt:
       "Hand holding black machined steel mechanical pencil with brass tip and top.",
   },
@@ -143,7 +143,7 @@ const products = [
 
     href: "#",
 
-    imageSrc: "../../../public/img/FOTOS 16.jpg",
+    imageSrc: "img/FOTOS 16.jpg",
     imageAlt:
       "Hand holding black machined steel mechanical pencil with brass tip and top.",
   },
@@ -152,7 +152,7 @@ const products = [
 
     href: "#",
 
-    imageSrc: "../../../public/img/FOTOS 6.jpg",
+    imageSrc: "img/FOTOS 6.jpg",
     imageAlt:
       "Hand holding black machined steel mechanical pencil with brass tip and top.",
   },
@@ -161,7 +161,7 @@ const products = [
 
     href: "#",
 
-    imageSrc: "../../../public/img/portfolio0.jpg",
+    imageSrc: "img/portfolio0.jpg",
     imageAlt:
       "Hand holding black machined steel mechanical pencil with brass tip and top.",
   },
@@ -170,7 +170,7 @@ const products = [
 
     href: "#",
 
-    imageSrc: "../../../public/img/portfolio3.jpg",
+    imageSrc: "img/portfolio3.jpg",
     imageAlt:
       "Hand holding black machined steel mechanical pencil with brass tip and top.",
   },
@@ -179,7 +179,7 @@ const products = [
 
     href: "#",
 
-    imageSrc: "../../../public/img/portfolio4.jpg",
+    imageSrc: "img/portfolio4.jpg",
     imageAlt:
       "Hand holding black machined steel mechanical pencil with brass tip and top.",
   },
@@ -188,7 +188,7 @@ const products = [
 
     href: "#",
 
-    imageSrc: "../../../public/img/portfolio5.jpg",
+    imageSrc: "img/portfolio5.jpg",
     imageAlt:
       "Hand holding black machined steel mechanical pencil with brass tip and top.",
   },
@@ -197,7 +197,7 @@ const products = [
 
     href: "#",
 
-    imageSrc: "../../../public/img/portfolio6.jpg",
+    imageSrc: "img/portfolio6.jpg",
     imageAlt:
       "Hand holding black machined steel mechanical pencil with brass tip and top.",
   },
@@ -206,7 +206,7 @@ const products = [
 
     href: "#",
 
-    imageSrc: "../../../public/img/FOTO 20.jpg",
+    imageSrc: "img/FOTO 20.jpg",
     imageAlt:
       "Person using a pen to cross a task off a productivity paper card.",
   },
