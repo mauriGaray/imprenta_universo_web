@@ -15,15 +15,10 @@ const stats = [
   },
 ];
 
-export default function ContactSection() {
+export const Ubicacion = () => {
   return (
     <div>
-      <div className="relative mx-auto max-w-7xl px-6 lg:px-8 isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
-        <img
-          alt=""
-          src="/img/portfolio8.png"
-          className="absolute inset-0 -z-10 h-full w-full object-cover object-center"
-        />
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8 isolate overflow-hidden py-24 sm:py-32">
         <div
           aria-hidden="true"
           className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl">
@@ -52,18 +47,30 @@ export default function ContactSection() {
         </div>
 
         <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:mx-0 relative z-10">
-            <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              ¡Contáctanos!
-            </h2>
-            <p className="mt-6 text-2xl leading-8 text-white">
-              Estamos aquí para ayudarte. Nuestro equipo de expertos está listo
-              para brindarte asesoramiento personalizado y soluciones a medida.
-              No dudes en llamarnos o enviarnos un correo electrónico para
-              obtener más información y comenzar tu próximo proyecto con
-              nosotros.
-            </p>
+          <div className="relative z-10 flex flex-col lg:flex-row lg:items-start">
+            <div className="lg:w-1/2">
+              <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+                ¿Cuál es tu próximo proyecto?
+              </h2>
+              <p className="mt-6 text-2xl leading-8 text-white">
+                Visitanos para descubrir cómo nuestro equipo puede ayudarte a
+                dar vida a tus proyectos con soluciones de impresión de alta
+                calidad. Estamos aquí para brindarte asesoramiento personalizado
+                y un servicio de calidad.
+              </p>
+            </div>
+            <div className="mt-12 lg:mt-0 lg:ml-12 lg:w-1/2 flex justify-center">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3544.2206119397047!2d-55.862292225257356!3d-27.337570611088026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945795047143856f%3A0xfe168449178cb5c2!2sImprenta%20Universo!5e0!3m2!1ses-419!2sar!4v1722957706995!5m2!1ses-419!2sar"
+                className="border-0"
+                width="100%"
+                height="400"
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"></iframe>
+            </div>
           </div>
+
           <div className="relative z-10 mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
             <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
               {stats.map((stat) => (
@@ -75,9 +82,9 @@ export default function ContactSection() {
                 </div>
               ))}
             </dl>
-            <Link to={"/portfolio"}>
+            <Link to={"https://maps.app.goo.gl/nB1Gfx7k5qG5MP4H8"}>
               <Button className=" flex justify-center mx-auto mt-8 p-4 rounded bg-custom-pink py-2 px-4  text-sm font-bold text-white data-[hover]:bg-pink-950 data-[active]:bg-pink-800">
-                SOLICITAR COTIZACIÓN
+                IR A GOOGLE MAPS
               </Button>
             </Link>
           </div>
@@ -85,4 +92,4 @@ export default function ContactSection() {
       </div>
     </div>
   );
-}
+};
