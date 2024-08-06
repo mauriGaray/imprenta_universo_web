@@ -11,7 +11,11 @@ const navigation = [
   { name: "INICIO", href: "/", current: false },
   { name: "UBICACIÓN", href: "/ubicacion", current: false },
   { name: "PORTFOLIO", href: "/portfolio", current: false },
-  { name: "SOLICITE COTIZACIÓN", href: "/contacto", current: false },
+  {
+    name: "SOLICITE COTIZACIÓN",
+    href: "https://wa.me/595981482599?text=Hola!%20Me%20gustar%C3%ADa%20pedir%20una%20cotizaci%C3%B3n.",
+    current: false,
+  },
 ];
 
 function classNames(...classes) {
