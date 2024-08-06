@@ -1,5 +1,6 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
+import { Button } from "@headlessui/react";
 const products = [
   {
     id: 1,
@@ -214,7 +215,7 @@ const products = [
 const Portfolio = () => {
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-2xl lg:text-center">
+      <div className="mx-12 md:mx-auto max-w-2xl lg:text-center">
         <p className="mt-12 text-5xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Impresiones que dejan huellas
         </p>
@@ -226,6 +227,14 @@ const Portfolio = () => {
           hemos ayudado a nuestros clientes a destacar con diseños inspiradores
           y una calidad que impresiona.
         </p>
+        <Link
+          to={
+            "https://wa.me/595981482599?text=Hola!%20Me%20gustar%C3%ADa%20pedir%20una%20cotizaci%C3%B3n."
+          }>
+          <Button className=" flex justify-center mx-auto mt-8 p-4 rounded bg-custom-pink py-2 px-4  text-sm font-bold text-white data-[hover]:bg-pink-950 data-[active]:bg-pink-800">
+            SOLICITAR COTIZACIÓN
+          </Button>
+        </Link>
       </div>
 
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">

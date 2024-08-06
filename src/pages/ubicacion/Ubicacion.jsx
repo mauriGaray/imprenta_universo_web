@@ -3,11 +3,16 @@ import { Button } from "@headlessui/react";
 import { Link } from "react-router-dom";
 
 const stats = [
-  { name: "+595 981 482599", value: "Teléfono" },
-  { name: "imp.universo@gmail.com", value: "Email" },
+  { name: "+595 981 482599", value: "Teléfono", href: "tel:+595981482599" },
+  {
+    name: "imp.universo@gmail.com",
+    value: "Email",
+    href: "mailto:imp.universo@gmail.com",
+  },
   {
     name: "Honorio González c/ Padre Kreusser, Encarnación, Py",
     value: "Dirección",
+    href: "https://maps.app.goo.gl/nB1Gfx7k5qG5MP4H8",
   },
   {
     name: "Lun. a Vie. 07:30 a 12:00 y 13:30 a 18:00 / Sáb. 08:00 a 12:00",
@@ -74,12 +79,16 @@ export const Ubicacion = () => {
           <div className="relative z-10 mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
             <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
               {stats.map((stat) => (
-                <div key={stat.name} className="flex flex-col">
-                  <dd className="text-2xl font-bold leading-9 tracking-tight text-white flex">
-                    {stat.value}
-                  </dd>
-                  <dt className="text-xl leading-7 text-white">{stat.name}</dt>
-                </div>
+                <Link to={stat.href}>
+                  <div key={stat.name} className="flex flex-col">
+                    <dd className="text-2xl font-bold leading-9 tracking-tight text-white flex">
+                      {stat.value}
+                    </dd>
+                    <dt className="text-xl leading-7 text-white">
+                      {stat.name}
+                    </dt>
+                  </div>
+                </Link>
               ))}
             </dl>
             <Link to={"https://maps.app.goo.gl/nB1Gfx7k5qG5MP4H8"}>

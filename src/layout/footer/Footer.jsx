@@ -117,7 +117,12 @@ const Footer = () => {
                 </div>
                 <div role="section" className="hover:opacity-75">
                   {" "}
-                  <Link to={"/contacto"}>SOLICITAR COTIZACIÓN</Link>{" "}
+                  <Link
+                    to={
+                      "https://wa.me/595981482599?text=Hola!%20Me%20gustar%C3%ADa%20pedir%20una%20cotizaci%C3%B3n."
+                    }>
+                    SOLICITAR COTIZACIÓN
+                  </Link>{" "}
                 </div>
               </nav>
             </div>
@@ -134,19 +139,27 @@ const Footer = () => {
             <div>
               <p className="font-medium">Contacto</p>
               <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                <div className="hover:opacity-75">tel.: +595 981 482599</div>
-                <div className="hover:opacity-75">
-                  email: imp.universo@gmail.com
-                </div>
+                <Link to={"tel:+595981482599"}>
+                  <div className="hover:opacity-75">tel.: +595 981 482599</div>
+                </Link>
+
+                <Link to={"mailto:imp.universo@gmail.com"}>
+                  <div className="hover:opacity-75">
+                    email: imp.universo@gmail.com
+                  </div>
+                </Link>
               </nav>
             </div>
             <div>
               <p className="font-medium">Ubicación</p>
               <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                <div className="hover:opacity-75">
-                  {" "}
-                  Honorio González c/ Padre Kreusser,
-                </div>
+                <Link to={"https://maps.app.goo.gl/nB1Gfx7k5qG5MP4H8"}>
+                  <div className="hover:opacity-75">
+                    {" "}
+                    Honorio González c/ Padre Kreusser,
+                  </div>
+                </Link>
+
                 <a className="hover:opacity-75"> Encarnación,</a>
                 <a className="hover:opacity-75"> Paraguay</a>
               </nav>
